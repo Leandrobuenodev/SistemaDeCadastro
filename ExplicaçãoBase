@@ -1,0 +1,56 @@
+
+# DICIONÁRIOS EM PYTHON 🧠
+
+# O que é um dicionário?
+# Um dicionário é uma coleção de pares chave:valor
+
+# Exemplo básico:
+meu_dicionario = {
+    "nome": "Leandro",
+    "idade": 30,
+    "cidade": "São Paulo"
+}
+
+# --------------------------------
+# Acessar um valor
+print(meu_dicionario["nome"])  # Saída: Leandro
+
+# --------------------------------
+# Adicionar ou alterar um valor
+meu_dicionario["idade"] = 31  # Atualiza a idade
+meu_dicionario["profissão"] = "Analista"  # Adiciona nova chave
+
+# --------------------------------
+# Remover um item
+del meu_dicionario["cidade"]  # Remove a chave 'cidade'
+
+# --------------------------------
+# Percorrer o dicionário
+for chave, valor in meu_dicionario.items():
+    print(f"{chave}: {valor}")
+
+# --------------------------------
+# Verificar se uma chave existe
+if "nome" in meu_dicionario:
+    print("Nome encontrado!")
+
+# --------------------------------
+# Métodos úteis
+chaves = meu_dicionario.keys()      # retorna todas as chaves
+valores = meu_dicionario.values()   # retorna todos os valores
+itens = meu_dicionario.items()      # retorna pares (chave, valor)
+
+# --------------------------------
+# Exemplo completo
+pessoa = {
+    "nome": "Joana",
+    "idade": 25
+}
+
+pessoa["cidade"] = "Recife"
+pessoa["idade"] = 26
+
+for chave, valor in pessoa.items():
+    print(f"{chave}: {valor}")
+
+print("=" * 80)
